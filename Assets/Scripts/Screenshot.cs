@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Handles the screen shot feature, updating a <see cref="Image"/> with Recorded Frame
+/// Handles the screen shot behaviours, updating a <see cref="Image"/> with Recorded Frame
 /// </summary>
 public class Screenshot : MonoBehaviour
 {
