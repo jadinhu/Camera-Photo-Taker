@@ -2,7 +2,7 @@
  * MouseLook.cs
  * Created by: Jadson Almeida [jadson.sistemas@gmail.com]
  * Created on: 11/11/21 (dd/mm/yy)
- * Revised on: 16/11/21 (dd/mm/yy)
+ * Revised on: 21/12/21 (dd/mm/yy)
  */
 using UnityEngine;
 
@@ -18,7 +18,7 @@ public class MouseLook : MonoBehaviour
     /// <summary>
     /// Limit (min, max) of <see cref="Camera.main"/> zoom
     /// </summary>
-    public Vector2 zoomLimit;
+    public Vector2 zoomLimit = new Vector2(-3, 30);
     /// <summary>
     /// Limite of positive and negative angle with <see cref="Mathf.Clamp(float, float, float)"/> of <see cref="rotX"/> 
     /// for <see cref="Camera.main"/>
@@ -27,7 +27,7 @@ public class MouseLook : MonoBehaviour
     /// <summary>
     /// Mouse sensitivity for <see cref="Camera.main"/> rotation
     /// </summary>
-    float mouseSensitivity = 50;
+    public float mouseSensitivity = 100;
     /// <summary>
     /// The started position of <see cref="Camera.main"/>, used for <see cref="ResetCamera"/>
     /// </summary>

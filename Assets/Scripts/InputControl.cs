@@ -2,7 +2,7 @@
  * InputControl.cs
  * Created by: Jadson Almeida [jadson.sistemas@gmail.com]
  * Created on: 20/12/21 (dd/mm/yy)
- * Revised on: 20/12/21 (dd/mm/yy)
+ * Revised on: 22/12/21 (dd/mm/yy)
  */
 
 using UnityEngine;
@@ -16,11 +16,11 @@ public class InputControl : MonoBehaviour
     /// Script that handles screenshot behaviours
     /// </summary>
     [SerializeField]
-    Screenshot screenshot;
+    PhotoCapture photoCapture;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            screenshot.CaptureScreen();
+        if (Input.GetKeyDown(KeyCode.Space) && photoCapture)
+            photoCapture.Play();
     }
 }
